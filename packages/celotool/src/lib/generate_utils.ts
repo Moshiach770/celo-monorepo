@@ -1,4 +1,3 @@
-import { blsPrivateKeyToProcessedPrivateKey } from '@celo/celotool/src/lib/bls_utils'
 import { envVar, fetchEnv, fetchEnvOrFallback } from '@celo/celotool/src/lib/env-utils'
 import {
   CONTRACT_ADDRESSES,
@@ -10,6 +9,7 @@ import {
   TEMPLATE,
 } from '@celo/celotool/src/lib/genesis_constants'
 import { ensure0x, strip0x } from '@celo/celotool/src/lib/utils'
+import { blsPrivateKeyToProcessedPrivateKey } from '@celo/utils/lib/bls'
 import * as bls12377js from 'bls12377js'
 import { ec as EC } from 'elliptic'
 import { range, repeat } from 'lodash'
